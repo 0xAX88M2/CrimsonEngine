@@ -1,0 +1,174 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Crimson Sources">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Templates">
+      <UniqueIdentifier>{22ec2f1f-71e8-4ffa-b77a-707f7bb16480}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Crimson Sources\Crimson Core">
+      <UniqueIdentifier>{66ead232-983c-4ed1-87cf-81aa0331e709}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Crimson Sources\Crimson Core\Main">
+      <UniqueIdentifier>{95b6dc3f-10d1-4964-a327-e6284c7befa5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Crimson Sources\Crimson Core\Components">
+      <UniqueIdentifier>{ee47fdfc-1ad5-4003-8b98-bcbf9dcb9450}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Crimson Sources\Crimson Platforms">
+      <UniqueIdentifier>{fa6111ef-6e09-45c6-85df-8f919a48f86c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Crimson Sources\Crimson Platforms\Windows">
+      <UniqueIdentifier>{265aaa55-4222-4bc0-a44d-7c4abab057c5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Crimson Sources\Crimson Platforms\Android">
+      <UniqueIdentifier>{6be23c10-937a-438c-a749-80ffb5a4b9e4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Crimson Sources\Crimson Platforms\Linux">
+      <UniqueIdentifier>{39cc0210-dfd0-4f1a-8927-38c8d932f73d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Crimson Sources\Crimson Platforms\Diet Crimson">
+      <UniqueIdentifier>{ccd06e79-f914-4c14-8a85-351a62279faa}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="cr_windows.c">
+      <Filter>Crimson Sources\Crimson Platforms\Windows</Filter>
+    </ClCompile>
+    <ClCompile Include="cr_debug.c">
+      <Filter>Crimson Sources\Crimson Core\Main</Filter>
+    </ClCompile>
+    <ClCompile Include="crimson.c">
+      <Filter>Crimson Sources\Crimson Core\Main</Filter>
+    </ClCompile>
+    <ClCompile Include="cr_android.c">
+      <Filter>Crimson Sources\Crimson Platforms\Android</Filter>
+    </ClCompile>
+    <ClCompile Include="cr_input.c">
+      <Filter>Crimson Sources\Crimson Core\Main</Filter>
+    </ClCompile>
+    <ClCompile Include="cr_collision.c">
+      <Filter>Crimson Sources\Crimson Core\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="cr_math.c">
+      <Filter>Crimson Sources\Crimson Core\Main</Filter>
+    </ClCompile>
+    <ClCompile Include="cr_linux.c">
+      <Filter>Crimson Sources\Crimson Platforms\Linux</Filter>
+    </ClCompile>
+    <ClCompile Include="cr_diet.c">
+      <Filter>Crimson Sources\Crimson Platforms\Diet Crimson</Filter>
+    </ClCompile>
+    <ClCompile Include="cr_memory.c">
+      <Filter>Crimson Sources\Crimson Core\Main</Filter>
+    </ClCompile>
+    <ClCompile Include="cr_win_input.c">
+      <Filter>Crimson Sources\Crimson Platforms\Windows</Filter>
+    </ClCompile>
+    <ClCompile Include="cr_objects.c">
+      <Filter>Crimson Sources\Crimson Core\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="cr_sprites.c">
+      <Filter>Crimson Sources\Crimson Core\Main</Filter>
+    </ClCompile>
+    <ClCompile Include="cr_drawing.c">
+      <Filter>Crimson Sources\Crimson Core\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="cr_camera.c">
+      <Filter>Crimson Sources\Crimson Core\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="cr_win_sprites.c">
+      <Filter>Crimson Sources\Crimson Platforms\Windows</Filter>
+    </ClCompile>
+    <ClCompile Include="cr_win_drawing.c">
+      <Filter>Crimson Sources\Crimson Platforms\Windows</Filter>
+    </ClCompile>
+    <ClCompile Include="cr_win_debug.c">
+      <Filter>Crimson Sources\Crimson Platforms\Windows</Filter>
+    </ClCompile>
+    <ClCompile Include="cr_audio.c">
+      <Filter>Crimson Sources\Crimson Core\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="cr_win_audio.c">
+      <Filter>Crimson Sources\Crimson Platforms\Windows</Filter>
+    </ClCompile>
+    <ClCompile Include="cr_stage.c">
+      <Filter>Crimson Sources\Crimson Core\Main</Filter>
+    </ClCompile>
+    <ClCompile Include="cr_font.c">
+      <Filter>Crimson Sources\Crimson Core\Components</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="cr_windows.h">
+      <Filter>Crimson Sources\Crimson Platforms\Windows</Filter>
+    </ClInclude>
+    <ClInclude Include="cr_debug.h">
+      <Filter>Crimson Sources\Crimson Core\Main</Filter>
+    </ClInclude>
+    <ClInclude Include="cr_android.h">
+      <Filter>Crimson Sources\Crimson Platforms\Android</Filter>
+    </ClInclude>
+    <ClInclude Include="cr_input.h">
+      <Filter>Crimson Sources\Crimson Core\Main</Filter>
+    </ClInclude>
+    <ClInclude Include="cr_collision.h">
+      <Filter>Crimson Sources\Crimson Core\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="cr_math.h">
+      <Filter>Crimson Sources\Crimson Core\Main</Filter>
+    </ClInclude>
+    <ClInclude Include="cr_linux.h">
+      <Filter>Crimson Sources\Crimson Platforms\Linux</Filter>
+    </ClInclude>
+    <ClInclude Include="cr_diet.h">
+      <Filter>Crimson Sources\Crimson Platforms\Diet Crimson</Filter>
+    </ClInclude>
+    <ClInclude Include="cr_memory.h">
+      <Filter>Crimson Sources\Crimson Core\Main</Filter>
+    </ClInclude>
+    <ClInclude Include="cr_win_input.h">
+      <Filter>Crimson Sources\Crimson Platforms\Windows</Filter>
+    </ClInclude>
+    <ClInclude Include="cr_objects.h">
+      <Filter>Crimson Sources\Crimson Core\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="cr_sprites.h">
+      <Filter>Crimson Sources\Crimson Core\Main</Filter>
+    </ClInclude>
+    <ClInclude Include="cr_drawing.h">
+      <Filter>Crimson Sources\Crimson Core\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="cr_camera.h">
+      <Filter>Crimson Sources\Crimson Core\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="cr_win_sprites.h">
+      <Filter>Crimson Sources\Crimson Platforms\Windows</Filter>
+    </ClInclude>
+    <ClInclude Include="cr_win_drawing.h">
+      <Filter>Crimson Sources\Crimson Platforms\Windows</Filter>
+    </ClInclude>
+    <ClInclude Include="cr_win_debug.h">
+      <Filter>Crimson Sources\Crimson Platforms\Windows</Filter>
+    </ClInclude>
+    <ClInclude Include="cr_audio.h">
+      <Filter>Crimson Sources\Crimson Core\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="cr_win_audio.h">
+      <Filter>Crimson Sources\Crimson Platforms\Windows</Filter>
+    </ClInclude>
+    <ClInclude Include="cr_stage.h">
+      <Filter>Crimson Sources\Crimson Core\Main</Filter>
+    </ClInclude>
+    <ClInclude Include="cr_font.h">
+      <Filter>Crimson Sources\Crimson Core\Components</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="crimson.h">
+      <Filter>Crimson Sources\Crimson Core\Main</Filter>
+    </None>
+  </ItemGroup>
+</Project>

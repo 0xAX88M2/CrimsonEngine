@@ -1,0 +1,227 @@
+#ifndef CR_INPUT_H
+#define CR_INPUT_H
+
+#define CR_ANALOG_DEADZONE_X (8000);
+#define CR_ANALOG_DEADZONE_Y (8000);
+
+#define CR_DPAD_DEADZONE_X (16000);
+#define CR_DPAD_DEADZONE_Y (16000);
+
+#define CR_DEFAULT_INPUT_COUNT (8)
+
+typedef enum {
+	CR_STICKMODE_ANALOG,
+	CR_STICKMODE_DPAD,
+	CR_STICKMODE_BUTTONS,
+} CR_STICK_MODE;
+
+typedef enum {
+	CR_P1,
+	CR_P2,
+	CR_P3,
+	CR_P4,
+	CR_PNULL1,
+	CR_PNULL2,
+	CR_PNULL3,
+	CR_PNULL4,
+} CR_PLAYER_INPUT;
+
+typedef enum {
+	CR_KEYCODE_0,
+	CR_KEYCODE_1,
+	CR_KEYCODE_2,
+	CR_KEYCODE_3,
+	CR_KEYCODE_4,
+	CR_KEYCODE_5,
+	CR_KEYCODE_6,
+	CR_KEYCODE_7,
+	CR_KEYCODE_8,
+	CR_KEYCODE_9,
+	CR_KEYCODE_Q,
+	CR_KEYCODE_W,
+	CR_KEYCODE_E,
+	CR_KEYCODE_R,
+	CR_KEYCODE_T,
+	CR_KEYCODE_Y,
+	CR_KEYCODE_U,
+	CR_KEYCODE_I,
+	CR_KEYCODE_O,
+	CR_KEYCODE_P,
+	CR_KEYCODE_A,
+	CR_KEYCODE_S,
+	CR_KEYCODE_D,
+	CR_KEYCODE_F,
+	CR_KEYCODE_G,
+	CR_KEYCODE_H,
+	CR_KEYCODE_J,
+	CR_KEYCODE_K,
+	CR_KEYCODE_L,
+	CR_KEYCODE_Z,
+	CR_KEYCODE_X,
+	CR_KEYCODE_C,
+	CR_KEYCODE_V,
+	CR_KEYCODE_B,
+	CR_KEYCODE_N,
+	CR_KEYCODE_M,
+	CR_KEYCODE_GRAVE,
+	CR_KEYCODE_MINUS,
+	CR_KEYCODE_EQUAL,
+	CR_KEYCODE_TAB,
+	CR_KEYCODE_BRACKET_OPEN,
+	CR_KEYCODE_BRACKET_CLOSE,
+	CR_KEYCODE_BACKSLASH,
+	CR_KEYCODE_SEMICOLON,
+	CR_KEYCODE_APOSTROPHE,
+	CR_KEYCODE_RETURN,
+	CR_KEYCODE_LEFT_SHIFT,
+	CR_KEYCODE_COMMA,
+	CR_KEYCODE_PERIOD,
+	CR_KEYCODE_FORWARD_SLASH,
+	CR_KEYCODE_RIGHT_SHIFT,
+	CR_KEYCODE_LEFT_CONTROL,
+	CR_KEYCODE_LEFT_ALT,
+	CR_KEYCODE_SPACE,
+	CR_KEYCODE_RIGHT_ALT,
+	CR_KEYCODE_RIGHT_CONTROL,
+	CR_KEYCODE_KEY_UP,
+	CR_KEYCODE_KEY_DOWN,
+	CR_KEYCODE_KEY_LEFT,
+	CR_KEYCODE_KEY_RIGHT,
+} CR_KEYBOARD_KEYCODES;
+
+typedef enum {
+	CR_BUTTON_A,
+	CR_BUTTON_B,
+	CR_BUTTON_X,
+	CR_BUTTON_Y,
+	CR_BUTTON_L,
+	CR_BUTTON_R,
+	CR_BUTTON_UP,
+	CR_BUTTON_DOWN,
+	CR_BUTTON_LEFT,
+	CR_BUTTON_RIGHT,
+	CR_BUTTON_START,
+	CR_BUTTON_SELECT,
+} CR_CONTROLLER_BUTTONCODES;
+
+typedef struct {
+
+	//JOYSTICK
+	SDL_GameController *controller;
+
+	//KEYMAPPINGS
+	int A_KEYMAP;		
+	int B_KEYMAP;		
+	int X_KEYMAP;		
+	int Y_KEYMAP;		
+
+	int L_KEYMAP;		
+	int R_KEYMAP;	
+
+	int UP_KEYMAP;		
+	int DOWN_KEYMAP;	
+	int LEFT_KEYMAP;	
+	int RIGHT_KEYMAP;	
+
+	int START_KEYMAP;
+	int SELECT_KEYMAP;
+
+	// CONTROLLER MAPPINGS
+
+	int A_CONTMAP;
+	int B_CONTMAP;
+	int X_CONTMAP;
+	int Y_CONTMAP;
+
+	int L_CONTMAP;
+	int R_CONTMAP;
+
+	int UP_CONTMAP;
+	int DOWN_CONTMAP;
+	int LEFT_CONTMAP;
+	int RIGHT_CONTMAP;
+
+	int START_CONTMAP;
+	int SELECT_CONTMAP;
+
+	bool A_PRESS;
+	bool A_HOLD;
+	bool A_RELEASE;
+
+	bool B_PRESS;
+	bool B_HOLD;
+	bool B_RELEASE;
+
+	bool X_PRESS;
+	bool X_HOLD;
+	bool X_RELEASE;
+
+	bool Y_PRESS;
+	bool Y_HOLD;
+	bool Y_RELEASE;
+
+	bool L_PRESS;
+	bool L_HOLD;
+	bool L_RELEASE;
+
+	bool R_PRESS;
+	bool R_HOLD;
+	bool R_RELEASE;
+
+	bool UP_PRESS;
+	bool UP_HOLD;
+	bool UP_RELEASE;
+
+	bool DOWN_PRESS;
+	bool DOWN_HOLD;
+	bool DOWN_RELEASE;
+
+	bool LEFT_PRESS;
+	bool LEFT_HOLD;
+	bool LEFT_RELEASE;
+
+	bool RIGHT_PRESS;
+	bool RIGHT_HOLD;
+	bool RIGHT_RELEASE;
+
+	bool START_PRESS;
+	bool START_HOLD;
+	bool START_RELEASE;
+
+	bool SELECT_PRESS;
+	bool SELECT_HOLD;
+	bool SELECT_RELEASE;
+
+	bool BUTTON_PRESS;
+	bool BUTTON_HOLD;
+	bool BUTTON_RELEASE;
+
+	//OTHER
+	unsigned char input_type;
+
+	unsigned char lstick_mode;
+	unsigned char rstick_mode;
+
+	bool keyboard_enabled;
+	bool controller_enabled;
+
+	int analog_deadzone;
+	int dpad_deadzone;
+
+	bool locked;
+
+	bool skip_update;
+
+} CR_INPUT_STRUCT;
+
+CR_INPUT_STRUCT cr_input[CR_DEFAULT_INPUT_COUNT];
+
+//FUNCTIONS
+void cr_input_set_held(bool *button_hold_value, bool *button_pressed_value);
+void cr_input_set_released(bool *button_hold_value, bool *button_released_value, bool *button_pressed_value);
+void cr_input_clear(CR_INPUT_STRUCT *input);
+
+void cr_input_adjust_mapping(void);
+void cr_input_restore_mapping(void);
+
+#endif // !CR_INPUT_H

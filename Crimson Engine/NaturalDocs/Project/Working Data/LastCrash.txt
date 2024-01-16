@@ -1,0 +1,33 @@
+Generated on 10/20/2018 12:47:19 AM
+
+Crash Message:
+
+   Can't add zero or negative numbers to an ID number set. (Builder Thread 4)
+   (System.ArgumentException)
+
+Stack Trace:
+
+   ----- Builder Thread 4 -----
+   at CodeClear.NaturalDocs.Engine.IDObjects.NumberSet.Add(Int32 number)
+   at CodeClear.NaturalDocs.Engine.Output.Components.HTMLTopicPage.Build(Accessor accessor, CancelDelegate cancelDelegate)
+   at CodeClear.NaturalDocs.Engine.Output.Builders.HTML.BuildSourceFile(Int32 fileID, Accessor accessor, CancelDelegate cancelDelegate)
+   at CodeClear.NaturalDocs.Engine.Output.Builders.HTML.WorkOnUpdatingOutput(CancelDelegate cancelDelegate)
+   at CodeClear.NaturalDocs.Engine.Output.Manager.WorkOnUpdatingOutput(CancelDelegate cancelDelegate)
+   at CodeClear.NaturalDocs.Engine.Thread.InternalStart()
+   ----- Parent Thread -----
+   at CodeClear.NaturalDocs.CLI.Application.Multithread(String threadName, CancellableTask task)
+   at CodeClear.NaturalDocs.CLI.Application.BuildDocumentation(ErrorList errorList)
+   at CodeClear.NaturalDocs.CLI.Application.Main(String[] commandLine)
+
+Command Line:
+
+   "C:\Program Files (x86)\Natural Docs\NaturalDocs.exe" C:\Users\Noah\Documents\GitKraken\Crimson\Crimson Engine\NaturalDocs\Project --pause-on-error
+
+Versions:
+
+   Natural Docs 2.0.2
+
+   .NET 4.7.3190.0
+   Microsoft Windows NT 6.2.9200.0 (Win32NT)
+
+   SQLite 3.13.0

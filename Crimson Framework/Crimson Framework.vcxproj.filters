@@ -1,0 +1,171 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Stages">
+      <UniqueIdentifier>{3af457e9-ed70-4ec9-8117-275c296b085d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Stages\Menus">
+      <UniqueIdentifier>{e2219244-b2dc-42e4-9b64-72ecab0a142f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Stages\Levels">
+      <UniqueIdentifier>{8995b1b5-a0a7-41ea-8602-e6c91d6d790a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Objects">
+      <UniqueIdentifier>{290be2a5-f537-44bc-b8be-505fbb465f01}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Framework">
+      <UniqueIdentifier>{59f5cf29-82f2-46cf-8b9d-bfc42c85e535}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Framework\Assets">
+      <UniqueIdentifier>{cda57da6-3eee-40da-b76f-19a4ab292b8e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Framework\Main">
+      <UniqueIdentifier>{8a4db561-5429-40bd-9e73-e524cc59d21c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Framework\Components">
+      <UniqueIdentifier>{8998ffec-8791-4e90-8661-a51c87330028}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Stages\Levels\vape">
+      <UniqueIdentifier>{8027bc80-5f4d-4864-8702-c22a78e39916}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Stages\Menus\Loading">
+      <UniqueIdentifier>{5fb4fba9-0047-4e79-bfc1-0105240316c6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Objects\VHS">
+      <UniqueIdentifier>{5b6c7285-6e61-422d-9a48-adada47cf647}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Objects\Helios">
+      <UniqueIdentifier>{03a00e69-3510-47e3-b3b0-b2da9767c09f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Framework\Components\Hitboxes">
+      <UniqueIdentifier>{dde607ec-ca6f-4c7e-97e6-579f3fa9dc8b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Framework\Components\Fade">
+      <UniqueIdentifier>{028d80e1-8644-487d-aef9-c3b65cd99276}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Players">
+      <UniqueIdentifier>{e69a9412-789f-4799-8085-1a19520e8189}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Players\Player Object">
+      <UniqueIdentifier>{6471b3e2-b3fa-4fe3-a777-947e068f9228}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Players\Characters">
+      <UniqueIdentifier>{22f89b4b-7589-43f6-8122-f799be5aad8c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Stages\Levels\teststage">
+      <UniqueIdentifier>{160420b7-0c14-4252-bc16-c6519899e723}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Players\Characters\char1">
+      <UniqueIdentifier>{f9f30b2d-b4e4-43e4-81b1-f7c1e5682c1c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Stages\Levels\Level 6">
+      <UniqueIdentifier>{3678ce52-11b3-4918-895f-8f32f906bbfb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Objects\Particle">
+      <UniqueIdentifier>{25309ff6-ee38-4731-bf7c-c963faee7077}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="framework.c">
+      <Filter>Framework\Main</Filter>
+    </ClCompile>
+    <ClCompile Include="main.c">
+      <Filter>Framework\Main</Filter>
+    </ClCompile>
+    <ClCompile Include="vape.c">
+      <Filter>Stages\Levels\vape</Filter>
+    </ClCompile>
+    <ClCompile Include="loading.c">
+      <Filter>Stages\Menus\Loading</Filter>
+    </ClCompile>
+    <ClCompile Include="vhs.c">
+      <Filter>Objects\VHS</Filter>
+    </ClCompile>
+    <ClCompile Include="helios.c">
+      <Filter>Objects\Helios</Filter>
+    </ClCompile>
+    <ClCompile Include="fr_hitbox.c">
+      <Filter>Framework\Components\Hitboxes</Filter>
+    </ClCompile>
+    <ClCompile Include="fr_fade.c">
+      <Filter>Framework\Components\Fade</Filter>
+    </ClCompile>
+    <ClCompile Include="teststage.c">
+      <Filter>Stages\Levels\teststage</Filter>
+    </ClCompile>
+    <ClCompile Include="player.c">
+      <Filter>Players\Player Object</Filter>
+    </ClCompile>
+    <ClCompile Include="player_col.c">
+      <Filter>Players\Player Object</Filter>
+    </ClCompile>
+    <ClCompile Include="player_routine.c">
+      <Filter>Players\Player Object</Filter>
+    </ClCompile>
+    <ClCompile Include="player_jump.c">
+      <Filter>Players\Player Object</Filter>
+    </ClCompile>
+    <ClCompile Include="level6.c">
+      <Filter>Stages\Levels\Level 6</Filter>
+    </ClCompile>
+    <ClCompile Include="particle.c">
+      <Filter>Objects\Particle</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="framework.h">
+      <Filter>Framework\Main</Filter>
+    </ClInclude>
+    <ClInclude Include="fr_objects.h">
+      <Filter>Framework\Assets</Filter>
+    </ClInclude>
+    <ClInclude Include="fr_stages.h">
+      <Filter>Framework\Assets</Filter>
+    </ClInclude>
+    <ClInclude Include="vape.h">
+      <Filter>Stages\Levels\vape</Filter>
+    </ClInclude>
+    <ClInclude Include="loading.h">
+      <Filter>Stages\Menus\Loading</Filter>
+    </ClInclude>
+    <ClInclude Include="vhs.h">
+      <Filter>Objects\VHS</Filter>
+    </ClInclude>
+    <ClInclude Include="helios.h">
+      <Filter>Objects\Helios</Filter>
+    </ClInclude>
+    <ClInclude Include="fr_hitbox.h">
+      <Filter>Framework\Components\Hitboxes</Filter>
+    </ClInclude>
+    <ClInclude Include="fr_fade.h">
+      <Filter>Framework\Components\Fade</Filter>
+    </ClInclude>
+    <ClInclude Include="fr_components.h">
+      <Filter>Framework\Assets</Filter>
+    </ClInclude>
+    <ClInclude Include="teststage.h">
+      <Filter>Stages\Levels\teststage</Filter>
+    </ClInclude>
+    <ClInclude Include="player.h">
+      <Filter>Players\Player Object</Filter>
+    </ClInclude>
+    <ClInclude Include="fr_players.h">
+      <Filter>Framework\Assets</Filter>
+    </ClInclude>
+    <ClInclude Include="player_col.h">
+      <Filter>Players\Player Object</Filter>
+    </ClInclude>
+    <ClInclude Include="player_routine.h">
+      <Filter>Players\Player Object</Filter>
+    </ClInclude>
+    <ClInclude Include="player_jump.h">
+      <Filter>Players\Player Object</Filter>
+    </ClInclude>
+    <ClInclude Include="level6.h">
+      <Filter>Stages\Levels\Level 6</Filter>
+    </ClInclude>
+    <ClInclude Include="particle.h">
+      <Filter>Objects\Particle</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
